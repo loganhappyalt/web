@@ -1,13 +1,33 @@
- <title>skid Memorial</title>
- <img src="whydownloadme.png" alt="">
- <style>
-  img {
-    
-    border-radius: 30px;}
-    
- </style>
- <style>
-  body {
-    background-color: purple;
-  }
- </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skid Memorial</title>
+    <style>
+        html, body {
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrolling */
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            border-radius: 30px;
+            margin: 10px;
+            max-width: 90vw; /* Restricts width to 90% of the viewport width */
+            max-height: 40vh; /* Restricts height to 40% of the viewport height */
+            object-fit: contain; /* Ensures the image is not cut off */
+        }
+    </style>
+</head>
+<body>
+    <img src="sid.png" alt="Sid Image">
+    <img src="whydownloadme.png" alt="Why Download Me Image">
+</body>
+</html>
